@@ -11,8 +11,6 @@ const main = async () => {
 
   await MongoClient.connect();
 
-  console.log("Conectado ao banco com sucesso");
-
   app.get("/users", async (req, res) => {
     const mongoGetUsersRepository = new MongoGetUsersRepository();
 
