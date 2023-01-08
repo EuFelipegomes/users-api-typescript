@@ -1,4 +1,4 @@
-import  validator from 'validator'
+import validator from "validator";
 import { User } from "../../models/user";
 import { HttpRequest, HttpResponse } from "../protocols";
 import {
@@ -25,13 +25,24 @@ export class CreateUserControler implements ICreateUserController {
         }
       }
 
-      const emailIsValid = validator.isEmail(httpRequest.body!.email)
+      const someFieldIsNotAllowedToCreate = Object.keys(httpRequest.body!).some(
+        (key) => !requiredFields.includes(key as keyof CreateUserParams)
+      );
 
-      if(!emailIsValid){
-       return {
-        statusCode: 400,
-        body: 'E-mail is not valid'
-       }
+      if (someFieldIsNotAllowedToCreate) {
+        return {
+          statusCode: 400,
+          body: "Some received field is not allowed",
+        };
+      }
+
+      const emailIsValid = validator.isEmail(httpRequest.body!.email);
+
+      if (!emailIsValid) {
+        return {
+          statusCode: 400,
+          body: "E-mail is not valid",
+        };
       }
 
       const user = await this.createUserRepository.createUser(
