@@ -1,3 +1,8 @@
+# Users API
+
+The Users API is an API that allows you to perform HTTP requests such as GET, POST, PATH and DELETE on a database and return a response to the client.
+
+
 ## Documentação da API
 
 #### Retorna uma lista de todos os usuários
