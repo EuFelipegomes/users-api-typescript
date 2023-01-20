@@ -6,7 +6,7 @@ The Users API is an API that allows you to perform HTTP requests such as GET, PO
 
 ## API documentation
 
-#### Retorna uma lista de todos os usuários
+#### Return a list of all Users
 
 ```http
   GET /users
@@ -14,7 +14,7 @@ The Users API is an API that allows you to perform HTTP requests such as GET, PO
 
 
 
-#### Returns a list of all users
+#### Create user in database
 
 ```http
   POST /users
