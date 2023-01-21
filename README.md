@@ -6,26 +6,26 @@ The Users API is an API that allows you to perform HTTP requests such as GET, PO
 
 ## Rodando localmente
 
-Clone o projeto
+Clone the project 
 
 ```bash
   git clone https://github.com/EuFelipegomes/users-api-typescript.git
 ```
 
-Entre no diretório do projeto
+Enter in directory of repository
 
 ```bash
   cd users-api-typescript
 ```
 
-Instale as dependências
+Install dependencies
 
 ```bash
   npm install
 ```
 
 
-Inicie o servidor
+Run server
 
 ```bash
   npm run start:dev
@@ -34,7 +34,7 @@ Inicie o servidor
 
 ## API documentation
 
-#### Retorna uma lista de todos os usuários
+#### return a list of all users
 
 ```http
   GET /users
@@ -42,7 +42,7 @@ Inicie o servidor
 
 
 
-#### Returns a list of all users
+#### Create user in database
 
 ```http
   POST /users
