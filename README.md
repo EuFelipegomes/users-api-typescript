@@ -8,6 +8,10 @@
 - Express
 - Typescript
 - MongoDB
+
+##Deployment
+Hosted on localhost
+
 ## Authors
 
 - [@EuFelipegomes](https://www.github.com/EuFelipegomes)
