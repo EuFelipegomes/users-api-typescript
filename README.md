@@ -1,7 +1,7 @@
 
 ## Getting starter
 
- This is a Node.js backend application written in TypeScript, which features REST API interface via Express.js, with the MongoDB database and Repository pattern architecture.
+ This is a Node.js backend application written in TypeScript, which features REST API interface via Express.js, with the MongoDB database, SOLID principles and Repository pattern architecture.
 ## Tecnologies
 
 - NodeJS
