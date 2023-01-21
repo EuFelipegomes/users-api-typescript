@@ -4,7 +4,7 @@
 The Users API is an API that allows you to perform HTTP requests such as GET, POST, PATH and DELETE on a database and return a response to the client.
 
 
-## Rodando localmente
+## Running locally
 
 Clone the project 
 
